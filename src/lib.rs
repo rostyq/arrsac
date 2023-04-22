@@ -14,13 +14,13 @@ use sample_consensus::{Consensus, Estimator, Model};
 /// If you do not shuffle, the output will be biased towards data at the beginning
 /// of the inputs.
 pub struct Arrsac<R> {
-    initialization_hypotheses: usize,
-    initialization_blocks: usize,
-    max_candidate_hypotheses: usize,
-    estimations_per_block: usize,
-    block_size: usize,
-    likelihood_ratio_threshold: f32,
-    inlier_threshold: f64,
+    pub initialization_hypotheses: usize,
+    pub initialization_blocks: usize,
+    pub max_candidate_hypotheses: usize,
+    pub estimations_per_block: usize,
+    pub block_size: usize,
+    pub likelihood_ratio_threshold: f32,
+    pub inlier_threshold: f64,
     rng: R,
     random_samples: Vec<u32>,
 }

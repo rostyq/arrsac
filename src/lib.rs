@@ -13,6 +13,7 @@ use sample_consensus::{Consensus, Estimator, Model};
 /// using this consensus process. It will not shuffle your data for you.
 /// If you do not shuffle, the output will be biased towards data at the beginning
 /// of the inputs.
+#[derive(Debug, Clone)]
 pub struct Arrsac<R> {
     pub initialization_hypotheses: usize,
     pub initialization_blocks: usize,
